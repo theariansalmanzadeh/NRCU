@@ -1,0 +1,6 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"v2.c" LINE:114
+showing_time DSTACK_USAGE:20 DSTACK_LEVEL:20 FILE:"v2.c" LINE:49
+sprintf DSTACK_USAGE:14 DSTACK_LEVEL:34 FILE:"C:\cvavr\lib\stdio.lib" LINE:1462
+_print DSTACK_USAGE:20 DSTACK_LEVEL:54 FILE:"C:\cvavr\lib\stdio.lib" LINE:533
+strlen DSTACK_USAGE:2 DSTACK_LEVEL:56 FILE:"C:\cvavr\lib\string.lib" LINE:1706
+twi_int_handler DSTACK_USAGE:18 DSTACK_LEVEL:74 FILE:"C:\cvavr\lib\twi.lib" LINE:241

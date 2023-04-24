@@ -1,0 +1,71 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+twi_tx_index                                                                      0x0260       1
+twi_rx_index                                                                      0x0261       1
+twi_result                                                                        0x0262       1
+change_min                                                                        0x0263       1
+changed_sec                                                                       0x0264       1
+cycle_hr                                                                          0x0265       1
+light_cycle                                                                       0x0266       1
+_base_y                                                                           0x0267       4
+_lcd_x                                                                            0x026B       1
+_lcd_y                                                                            0x026C       1
+_lcd_maxx                                                                         0x026D       1
+slave_address                                                                     0x026E       1
+twi_tx_buffer                                                                     0x026F       2
+bytes_to_tx                                                                       0x0271       1
+twi_rx_buffer                                                                     0x0272       2
+bytes_to_rx                                                                       0x0274       1
+twi_rx_buffer_size                                                                0x0275       1
+twi_slave_rx_handler                                                              0x0276       2
+twi_slave_tx_handler                                                              0x0278       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+first_time                                                                        R5           1
+hr                                                                                R4           1
+min                                                                               R7           1
+sec                                                                               R6           1
+current_hr                                                                        R9           1
+current_min                                                                       R8           1
+current_sec                                                                       R11          1
+time_cycle                                                                        R10          1
+change_cycle                                                                      R13          1
+change_hr                                                                         R12          1
+twi_flag                                                                          R2.0      1bit
+twi_ready                                                                         R2.1      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+showing_time                                                                      0x0008F     59
+changeInt0                                                                        0x000CA     11
+ext_int0_isr                                                                      0x000D5     39
+ext_int1_isr                                                                      0x000FC     17
+ext_int2_isr                                                                      0x0010D     17
+main                                                                              0x0011E    179
+rtc_init                                                                          0x001D1     25
+rtc_get_time                                                                      0x001EA     35
+rtc_set_time                                                                      0x0020D     25
+_lcd_write_nibble_G101                                                            0x00226     20
+_lcd_write_data                                                                   0x0023A     12
+lcd_gotoxy                                                                        0x00246     17
+lcd_clear                                                                         0x00257     14
+lcd_putchar                                                                       0x00265     32
+lcd_puts                                                                          0x00285     15
+lcd_putsf                                                                         0x00294     19
+lcd_init                                                                          0x002A7     47
+put_buff_G102                                                                     0x002D6     64
+_print_G102                                                                       0x00316    308
+sprintf                                                                           0x0044A     52
+twi_int_handler                                                                   0x0047E    357
+bcd2bin                                                                           0x005E3     13
+bin2bcd                                                                           0x005F0     10
+strlen                                                                            0x005FA     12
+strlenf                                                                           0x00606     13
